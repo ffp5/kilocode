@@ -228,6 +228,7 @@ export type SecretState = Pick<
 	| "groqApiKey"
 	| "chutesApiKey"
 	| "litellmApiKey"
+	| "makehubApiKey"
 	| "codeIndexOpenAiKey"
 	| "codeIndexQdrantApiKey"
 	| "kilocodeToken" // kilocode_change
@@ -251,6 +252,7 @@ export const SECRET_STATE_KEYS = keysOf<SecretState>()([
 	"groqApiKey",
 	"chutesApiKey",
 	"litellmApiKey",
+	"makehubApiKey",
 	"codeIndexOpenAiKey",
 	"codeIndexQdrantApiKey",
 	"kilocodeToken", // kilocode_change
