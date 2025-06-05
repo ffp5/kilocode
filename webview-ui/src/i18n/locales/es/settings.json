@@ -186,6 +186,7 @@
 		"getXaiApiKey": "Obtener clave API de xAI",
 		"litellmApiKey": "Clave API de LiteLLM",
 		"litellmBaseUrl": "URL base de LiteLLM",
+		"makehubApiKey": "Clave API de MakeHub",
 		"getMakehubApiKey": "Obtener clave API de MakeHub",
 		"makehubPerfRatio": "Relación Rendimiento/Precio",
 		"makehubPerfRatioDescription": "Controla cómo MakeHub equilibra entre precio y rendimiento al enrutar a los proveedores.",
