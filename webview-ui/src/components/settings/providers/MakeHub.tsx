@@ -25,7 +25,7 @@ export const MakeHub = ({
 	refetchRouterModels,
 }: MakeHubProps) => {
 	const { t } = useAppTranslation()
-	const [didRefetch, setDidRefetch] = useState<boolean>()
+	const [didRefetch, setDidRefetch] = useState<boolean>(false)
 
 	const handleInputChange = useCallback(
 		<K extends keyof ProviderSettings, E>(
