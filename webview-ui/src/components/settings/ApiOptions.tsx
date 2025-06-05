@@ -524,9 +524,9 @@ const ApiOptions = ({
 
 			{selectedProvider === "litellm" && (
 				<LiteLLM
-					apiConfiguration={apiConfiguration}
-					setApiConfigurationField={setApiConfigurationField}
-					routerModels={routerModels}
+				apiConfiguration={apiConfiguration}
+				setApiConfigurationField={setApiConfigurationField}
+				organizationAllowList={organizationAllowList}
 				/>
 			)}
 			{selectedProvider === "makehub" && (
