@@ -110,6 +110,7 @@ const bedrockSchema = apiModelIdProviderModelSchema.extend({
 	awsProfile: z.string().optional(),
 	awsUseProfile: z.boolean().optional(),
 	awsCustomArn: z.string().optional(),
+	awsModelContextWindow: z.number().optional(),
 	awsBedrockEndpointEnabled: z.boolean().optional(),
 	awsBedrockEndpoint: z.string().optional(),
 })
@@ -318,6 +319,7 @@ export const PROVIDER_SETTINGS_KEYS = keysOf<ProviderSettings>()([
 	"awsProfile",
 	"awsUseProfile",
 	"awsCustomArn",
+	"awsModelContextWindow",
 	"awsBedrockEndpointEnabled",
 	"awsBedrockEndpoint",
 	// Google Vertex
@@ -367,6 +369,9 @@ export const PROVIDER_SETTINGS_KEYS = keysOf<ProviderSettings>()([
 	// Code Index
 	"codeIndexOpenAiKey",
 	"codeIndexQdrantApiKey",
+	"codebaseIndexOpenAiCompatibleBaseUrl",
+	"codebaseIndexOpenAiCompatibleApiKey",
+	"codebaseIndexOpenAiCompatibleModelDimension",
 	// Reasoning
 	"enableReasoningEffort",
 	"reasoningEffort",
@@ -399,3 +404,21 @@ export const PROVIDER_SETTINGS_KEYS = keysOf<ProviderSettings>()([
 	"kilocodeToken", // kilocode_change
 	"kilocodeModel", // kilocode_change
 ])
+
+export const MODEL_ID_KEYS: Partial<keyof ProviderSettings>[] = [
+	"apiModelId",
+	"glamaModelId",
+	"openRouterModelId",
+	"openAiModelId",
+	"ollamaModelId",
+	"lmStudioModelId",
+	"lmStudioDraftModelId",
+	"unboundModelId",
+	"requestyModelId",
+	"litellmModelId",
+]
+
+export const getModelId = (settings: ProviderSettings): string | undefined => {
+	const modelIdKey = MODEL_ID_KEYS.find((key) => settings[key])
+	return modelIdKey ? (settings[modelIdKey] as string) : undefined
+}
