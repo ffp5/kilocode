@@ -184,10 +184,10 @@
 		"codestralBaseUrlDesc": "Atur URL alternatif untuk model Codestral.",
 		"xaiApiKey": "xAI API Key",
 		"getXaiApiKey": "Dapatkan xAI API Key",
-		"makehubApiKey": "Kunci API MakeHub",
-		"getMakehubApiKey": "Dapatkan Kunci API MakeHub",
 		"litellmApiKey": "LiteLLM API Key",
 		"litellmBaseUrl": "LiteLLM Base URL",
+		"makehubApiKey": "Kunci API MakeHub",
+		"getMakehubApiKey": "Dapatkan Kunci API MakeHub",
 		"makehubPerfRatio": "Rasio Performa/Harga",
 		"makehubPerfRatioDescription": "Mengontrol bagaimana MakeHub menyeimbangkan antara harga dan performa saat merutekan ke penyedia.",
 		"makehubPerfRatioLabels": {
