@@ -185,6 +185,7 @@ type GlobalSettings = {
 		  }
 		| undefined
 	enhancementApiConfigId?: string | undefined
+	commitMessageApiConfigId?: string | undefined
 	historyPreviewCollapsed?: boolean | undefined
 }
 

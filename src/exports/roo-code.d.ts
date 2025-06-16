@@ -185,6 +185,7 @@ type GlobalSettings = {
 		  }
 		| undefined
 	enhancementApiConfigId?: string | undefined
+	commitMessageApiConfigId?: string | undefined
 	historyPreviewCollapsed?: boolean | undefined
 }
 
@@ -966,6 +967,7 @@ type IpcMessage =
 									  }
 									| undefined
 								enhancementApiConfigId?: string | undefined
+								commitMessageApiConfigId?: string | undefined
 								historyPreviewCollapsed?: boolean | undefined
 							}
 							text: string
@@ -1467,6 +1469,7 @@ type TaskCommand =
 						  }
 						| undefined
 					enhancementApiConfigId?: string | undefined
+					commitMessageApiConfigId?: string | undefined
 					historyPreviewCollapsed?: boolean | undefined
 				}
 				text: string
